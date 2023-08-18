@@ -1,14 +1,19 @@
 package practice_ChaitraMam;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class BookFlightTicket 
 {
 	@Test
-	public void book()
+	public void book() throws InterruptedException
 	{
-	WebDriverManager.chromedriver().setup();
+//	WebDriverManager.chromedriver().setup();
 	WebDriver driver=new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	driver.get("https://www.makemytrip.com/");

@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tdd_framework_crossbrowser.Leave_Module">
+      <class name="crossBrowserSearchChecking.Task_Module">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="launchingBrowser"/>
           <include name="logout"/>
-          <include name="loginApplication"/>
-          <include name="click_leave"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="ExecuteTask"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- tdd_framework_crossbrowser.Leave_Module -->
+      </class> <!-- crossBrowserSearchChecking.Task_Module -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
