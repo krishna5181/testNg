@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="metagroup">
+  <test name="Test2">
+	  
+	  <groups>
+		  <define name="Reg1">
+			  <include name="sanity"></include>
+			  <include name="smoke"></include>
+		  </define>
+		  
+		  <run>
+			  <include name="Reg1"></include>
+		  </run>
+	  </groups>
+	  
+    <classes>
+      <class name="practice.Groups"/>
+    </classes>
+  </test> <!-- Test2 -->
+</suite> <!-- metagroup -->
